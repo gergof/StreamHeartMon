@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/build.js",
-    "build": "webpack"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,15 +23,13 @@
     "url": "https://github.com/gergof/StreamHeartMon/issues"
   },
   "homepage": "https://github.com/gergof/StreamHeartMon#readme",
-  "devDependencies": {
-    "path": "^0.12.7",
-    "raw-loader": "^1.0.0",
-    "webpack": "^4.28.2",
-    "webpack-cli": "^3.1.2"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
     "express": "^4.16.4",
     "internal-ip": "^3.0.1",
+    "path": "^0.12.7",
     "ws": "^6.1.2"
   }
 }
