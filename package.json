@@ -1,6 +1,6 @@
 {
   "name": "streamheartmon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Monitor and display your heart rate in real time under your streams",
   "main": "src/index.js",
   "scripts": {
