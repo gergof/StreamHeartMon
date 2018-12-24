@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "build": "pkg src/index.js --out-path build"
+    "build": "pkg src/index.js --target node10-linux,node10-macos,node10-win --out-path build"
   },
   "repository": {
     "type": "git",
