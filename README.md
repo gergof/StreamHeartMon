@@ -19,7 +19,7 @@ See [releases](https://github.com/gergof/StreamHeartMon/releases) or the [bucket
         - Download the latest from [releases](https://github.com/gergof/StreamHeartMon/releases)
         - Or build it:
             - Install [nodejs](https://nodejs.org/)
-            - Clone this repo `https://github.com/gergof/StreamHeartMon.git`
+            - Clone this repo `git clone https://github.com/gergof/StreamHeartMon.git`
             - Run `npm install`
             - Start the server with `npm start` or build it with `npm run build`
     - Start the StreamHeartMon software. Here you should see the address on which you can access it
@@ -29,7 +29,7 @@ See [releases](https://github.com/gergof/StreamHeartMon/releases) or the [bucket
         - Install [Automate](https://play.google.com/store/apps/details?id=com.llamalab.automate)
         - Open Automate and download the __StreamHeartMon mi band__ flow
         - Grant internet access for the flow
-        - Start the flow. You will be prompted for the server's UI which is displayed in the desktop software (_example: 192.168.0.100:3000_)
+        - Start the flow. You will be prompted for the server's URI which is displayed in the desktop software (_example: 192.168.0.100:3000_)
     - If you have something else
         - Find a way to get your heart rate and post it to a HTTP server. See the details below.
 - From OBS
@@ -84,3 +84,4 @@ _We are assuming that the server's address is 192.168.1.100:3000._
 ![console](https://systemtest.tk/uploads/ac1cf0fa8bbbd6e930a99a46279b672f)
 ![obs](https://systemtest.tk/uploads/2b31a495d567345c1958050bdec749fc)
 ![obs_settings](https://systemtest.tk/uploads/884ff6d7356f7ec3d4665272ab9a26dc)
+![automate_flow](https://systemtest.tk/uploads/07e4ecec44dee6b2bb0cd9784440702e)
