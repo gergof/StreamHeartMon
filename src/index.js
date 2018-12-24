@@ -20,11 +20,17 @@ wss.broadcast=(data) => {
 
 const srvAddr=InternalIp.v4.sync()+":3000";
 
-var hrStack=[]
+var hrStack=[];
 
 //use parsers
 app.use(BodyParser.urlencoded({extended: false}));
 app.use(BodyParser.json());
+
+app.get("/bpm", (req, res) => {
+    console.log(new Date()+" GET /bpm");
+
+    res.send(hrStack[hrStack.length-1]);
+});
 
 app.get("/:schema?", (req, res) => {
     console.log(new Date()+" GET /");
@@ -42,7 +48,7 @@ app.post("/", (req, res) => {
     wss.broadcast(JSON.stringify({time: new Date(), hr: req.body.hr}));
 
     res.send("OK");
-})
+});
 
 //start listening
 server.listen(3000, () => {
