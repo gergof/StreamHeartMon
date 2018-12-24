@@ -8,5 +8,5 @@ install:
   - npm install
 script:
   - npm run $SCRIPT
-  - tar -czvf dist.tar.gz -C dist .
+  - tar -czvf dist.tar.gz -C build .
   - /home/abstruse/deploy.sh "StreamHeartMon-$ABSTRUSE_BRANCH-$ABSTRUSE_COMMIT" "StreamHeartMon" dist.tar.gz
