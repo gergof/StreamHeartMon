@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build": "pkg src/index.js --out-path build"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,9 @@
     "url": "https://github.com/gergof/StreamHeartMon/issues"
   },
   "homepage": "https://github.com/gergof/StreamHeartMon#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "pkg": "^4.3.5"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
@@ -31,5 +34,9 @@
     "internal-ip": "^3.0.1",
     "path": "^0.12.7",
     "ws": "^6.1.2"
+  },
+  "pkg": {
+    "scripts": "./src/**/*.js",
+    "assets": "./src/**/*.html"
   }
 }
