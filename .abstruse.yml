@@ -1,0 +1,12 @@
+image: nodejs
+branches:
+  - master
+  - dev
+matrix:
+  - env: SCRIPT=build
+install:
+  - npm install
+script:
+  - npm run $SCRIPT
+  - tar -czvf dist.tar.gz -C dist .
+  - /home/abstruse/deploy.sh "StreamHeartMon-$ABSTRUSE_BRANCH-$ABSTRUSE_COMMIT" "StreamHeartMon" dist.tar.gz
