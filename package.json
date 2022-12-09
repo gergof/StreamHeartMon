@@ -30,7 +30,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "internal-ip": "^3.0.1",
     "path": "^0.12.7",
     "ws": "^6.1.2"
